@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Feliz cumple tomatito!!</title>
+
+        <meta charset = "utf-8">
+        <meta name = "viewport" content "width=device-width">
+
+        <meta name = "description" content = "Un regalo para mi princesa, te amo eugi <3">
+        <meta name = "theme-color" content = "#B8211D">
+
+        <meta property = "og:title" content = "Feliz cumple tomatito!!">
+        <meta property = "og:description" content = "Un regalo para mi princesa, te amo eugi <3">
+        
+        <link rel = "icon" type = "image/jpg" href = "/images/tomate.png">
+
+        <!-- RECORDAR: Falta armar styles -->
+
+        <style>
+            
+            body {
+
+                background: #ffffff
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <button id = "showCarta"> <!-- Aca en realidad el botón va a ir sobre otra imagen -->
+
+                <!-- tomate.png es un placeholder, después va un listón rojo -->
+                <img
+
+                    id = "tomate-png"
+                    width = 100
+                    height = 100
+                    src = "/images/tomate.png"
+                >
+
+            </button>
+
+            <dialog id = "dialogCarta">
+
+                <section>
+
+                    <p>CARTA ABIERTA</p>
+
+                </section>
+
+                <button id = "showPoema">
+
+                    <!-- tomate.png es un placeholder, después va ??? -->
+                    <img
+                    
+                        id = "tomate-png"
+                        width = 100
+                        height = 100
+                        src = "/images/tomate.png"
+                    >
+
+                </button>
+
+                <button id = "hideCarta">
+
+                    <!-- tomate.png es un placeholder, después va la cola del listón -->
+                    <img
+
+                        id = "tomate-png"
+                        width = 100
+                        height = 100
+                        src = "/images/tomate.png"
+                    >
+
+                </button>
+
+            </dialog>
+
+            <dialog id = "dialogPoema">
+
+                <section>
+
+                    <p>POEMA ABIERTO</p>
+
+                </section>
+
+                <button id = "hidePoema">
+
+                    <!-- tomate.png es un placeholder, después va ??? -->
+                    <img
+
+                        id = "tomate-png"
+                        width = 100
+                        height = 100
+                        src = "/images/tomate.png"
+                    >
+
+                </button>
+
+            </dialog>
+
+            <script>
+
+                window.showCarta.addEventListener('click', () => {window.dialogCarta.showModal()})
+                window.hideCarta.addEventListener('click', () => {window.dialogCarta.close()})
+
+                window.showPoema.addEventListener('click', () => {
+                    
+                    window.dialogPoema.showModal();
+                    window.dialogCarta.close()
+
+                })
+
+                window.hidePoema.addEventListener('click', () => {
+                    
+                    window.dialogPoema.close();
+                    window.dialogCarta.showModal()
+
+                })
+
+            </script>
+
+        </main>
+
+    </body>
+</html>
