@@ -7,7 +7,7 @@
         <title>Feliz cumple tomatito!!</title>
 
         <meta charset = "utf-8">
-        <meta name = "viewport" content "width=device-width">
+        <meta name = "viewport" content = "width=device-width">
 
         <meta name = "description" content = "Un regalo para mi princesa, te amo eugi <3">
         <meta name = "theme-color" content = "#B8211D">
@@ -23,7 +23,54 @@
             
             body {
 
-                background: #ffffff
+                background: radial-gradient(circle, #fdfcf0, #196b9e);
+                font-family: 'Monotype Corsiva';
+                font-size: 20px;
+
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            button {
+
+                background: transparent;
+                border: 0px;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+
+            #showPoema {
+
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+            }
+
+            .btn-cls {
+
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+            }
+
+            button:hover {
+
+                transform: scale(1.2);
+            }
+
+            dialog {
+
+                background: #d8d2bd;
+                width: 400px;
+                height: 500px;
+                border: 0px;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+                box-shadow: 4px 4px 4px rgb(0 0 0 / 0.1);
+                text-align: left;
             }
             
         </style>
@@ -34,15 +81,14 @@
 
         <main>
 
-            <button id = "showCarta"> <!-- Aca en realidad el botón va a ir sobre otra imagen -->
+            <button id = "showCarta">
 
-                <!-- tomate.png es un placeholder, después va un listón rojo -->
                 <img
 
-                    id = "tomate-png"
-                    width = 100
-                    height = 100
-                    src = "/images/tomate.png"
+                    id = "snoopy"
+                    width = 108
+                    height = 192
+                    src = "/images/snoopy.png"
                 >
 
             </button>
@@ -51,34 +97,34 @@
 
                 <section>
 
-                    <p>CARTA ABIERTA</p>
+                    <p>Querida Euge:</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
 
                 </section>
 
                 <button id = "showPoema">
 
-                    <!-- tomate.png es un placeholder, después va ??? -->
                     <img
                     
-                        id = "tomate-png"
-                        width = 100
-                        height = 100
-                        src = "/images/tomate.png"
+                        width = 80
+                        height = 103
+                        src = "/images/snoopy-jeje.png"
                     >
 
                 </button>
 
-                <button id = "hideCarta">
+                <button class = "btn-cls" id = "hideCarta">
 
-                    <!-- tomate.png es un placeholder, después va la cola del listón -->
-                    <img
+                    <span>
 
-                        id = "tomate-png"
-                        width = 100
-                        height = 100
-                        src = "/images/tomate.png"
-                    >
+                        <strong>(X)</strong>
 
+                    </span>
+                    
                 </button>
 
             </dialog>
@@ -87,19 +133,22 @@
 
                 <section>
 
-                    <p>POEMA ABIERTO</p>
+                    <p>El poema</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
+                    <p>.......................................................................................</p>
 
                 </section>
 
-                <button id = "hidePoema">
+                <button class = "btn-cls" id = "hidePoema">
 
-                    <!-- tomate.png es un placeholder, después va ??? -->
                     <img
 
-                        id = "tomate-png"
-                        width = 100
-                        height = 100
-                        src = "/images/tomate.png"
+                        width = 80
+                        height = 103
+                        src = "/images/snoopy-jeje.png"
                     >
 
                 </button>
